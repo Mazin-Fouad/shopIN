@@ -1,0 +1,25 @@
+.carousel-item {
+    height: calc(100vh - 62px);
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+    img {
+        object-fit: contain;
+    }
+
+    .carousel-caption {
+        top: 50%;
+    }
+}
